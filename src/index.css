@@ -1,0 +1,32 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-input {
+    @apply rounded border border-gray-400 focus:ring-0 focus:border-gray-500 w-full;
+  }
+
+  .row {
+    @apply flex w-full my-2;
+  }
+
+  .btn {
+    @apply py-1 px-3 rounded-md shadow-sm disabled:opacity-50;
+  }
+
+  .green {
+    @apply bg-green-400 hover:bg-green-500 text-white;
+  }
+
+  .gray {
+    @apply bg-gray-800 hover:bg-gray-900 text-white;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
