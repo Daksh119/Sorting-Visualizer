@@ -11,9 +11,9 @@ const useAnimation = (sortingAlgorithm) => {
 
   const dispatch = useDispatch();
 
-  // trigger sorting function
+  //trigger sorting function
   const startSorting = () => {
-    // isSorting set to true
+    //isSorting set to true
     dispatch(sortingArray());
     sort()
       .then(() => {
@@ -32,7 +32,7 @@ const useAnimation = (sortingAlgorithm) => {
       .finally(() => dispatch(stopSortingArray()));
   };
 
-  // Sort the array using sorting algorithm
+  //Sort the array using sorting algorithm
   const sort = async () => {
     await sortingAlgorithm(array, 0, array.length - 1, dispatch);
   };

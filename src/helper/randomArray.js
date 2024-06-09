@@ -1,12 +1,6 @@
 /**
  * Random array generator
- * Generat array with length {length} with values between {min} and {max}
- * {min} and {max} are included
- * @author Aniss Nahim
- * @license MIT
- */
-
-/**
+ /**
  * Generat random array
  * @param {Integer} length
  * @param {Integer} min

@@ -15,7 +15,6 @@ const App = () => {
 
   const dispatch = useDispatch();
 
-  // Start the app
   const createApp = () => {
     setCurrentAlgo(config.algorithm);
     dispatch(createArray());
@@ -40,7 +39,7 @@ const App = () => {
         return (
           <div className="h-96 p-2 lg:col-span-3 lg:col-start-2 flex items-center justify-center">
             <div className="text-xl text-gray-400">
-              Please select one of the avilable algorithms.
+              Please select one of the available algorithms.
             </div>
           </div>
         );
@@ -68,7 +67,6 @@ const App = () => {
         </div>
       </div>
       <div className="bg-gray-900 h-10 flex justify-center items-center text-white uppercase">
-        Made By Daksh Bajaj
       </div>
     </div>
   );
